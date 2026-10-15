@@ -1,7 +1,7 @@
 # Assignment 1 — Containerise and deploy
 
 **Name:** Sohan Chatani
-**Campus:** Confirm the campus name before submitting.
+**Campus:** Segovia
 
 ## What this is
 
