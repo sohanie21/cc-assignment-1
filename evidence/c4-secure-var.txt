@@ -1,0 +1,9 @@
+
+=== secure environment variables ===
+[
+  {
+    "name": "GREETING",
+    "secureValue": null,
+    "value": null
+  }
+]

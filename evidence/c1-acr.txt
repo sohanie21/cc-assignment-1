@@ -1,0 +1,15 @@
+=== ACR image tags ===
+Result
+--------
+1.0
+1.1
+
+=== deployed image digest ===
+Digest
+-----------------------------------------------------------------------
+sha256:51b3bc49fa552fe65172184c6dd7b796be38d50e475748ed629bfd907d0cb1fa
+sha256:67dca90425941e00de67cbbfb9d06e6acc21b277c523aebe12b2e598bbfe49d0
+sha256:70254c8014fa04525a49370b1a62e0dfe3a545eda2b062b5f93c312f0300b38b
+sha256:98b4f1733205415d778a99e176be9f8963b0295737b631c539d64607b2a2efdd
+sha256:b0d6dbc2e01fbe7488b98a7cc72f61918b8f9df91095255a09cb1cb386d8d9cf
+sha256:e0e4a61a0f21d5b295b7d9f246a6b0550087e99872e4418a2a7b8de2802065e0

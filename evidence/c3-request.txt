@@ -1,0 +1,5 @@
+=== public IP request with ACI host header ===
+{"greeting":"secure assignment greeting","hostname":"SandboxHost-639276766133982732"}
+
+=== public FQDN request ===
+{"greeting":"secure assignment greeting","hostname":"SandboxHost-639276766133982732"}

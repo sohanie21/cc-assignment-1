@@ -7,7 +7,7 @@ from flask import Flask, jsonify
 
 # Configuration comes from the environment and state lives on disk — the two things a
 # container image cannot hold on its own.
-GREETING = os.environ.get("GREETING", "Hello from the container")
+GREETING = os.environ.get("GREETING", "Hello from the rebuilt container")
 DATA_DIR = Path(os.environ.get("DATA_DIR", "/data"))
 PORT = int(os.environ.get("PORT", "8000"))
 

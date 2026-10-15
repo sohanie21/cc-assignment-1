@@ -1,0 +1,48 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 577B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim
+#2 DONE 0.9s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 118B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 1.38kB done
+#4 DONE 0.0s
+
+#5 [builder 1/4] FROM docker.io/library/python:3.12-slim@sha256:f77ac9e44ae96ef2c90b8053ea08c31f8be030f824196b0ae4db6d462c84e51f
+#5 resolve docker.io/library/python:3.12-slim@sha256:f77ac9e44ae96ef2c90b8053ea08c31f8be030f824196b0ae4db6d462c84e51f 0.0s done
+#5 DONE 0.0s
+
+#6 [stage-1 3/5] RUN mkdir -p /data &&     useradd --create-home --home-dir /app appuser &&     chown -R appuser:appuser /app /data
+#6 CACHED
+
+#7 [builder 4/4] RUN pip install --no-cache-dir -r requirements.txt
+#7 CACHED
+
+#8 [builder 2/4] WORKDIR /app
+#8 CACHED
+
+#9 [builder 3/4] COPY requirements.txt .
+#9 CACHED
+
+#10 [stage-1 4/5] COPY --from=builder /usr/local/lib/python3.12/site-packages /usr/local/lib/python3.12/site-packages
+#10 CACHED
+
+#11 [stage-1 5/5] COPY app.py .
+#11 DONE 0.0s
+
+#12 exporting to image
+#12 exporting layers 0.0s done
+#12 exporting manifest sha256:51b3bc49fa552fe65172184c6dd7b796be38d50e475748ed629bfd907d0cb1fa done
+#12 exporting config sha256:e6cede9e58b371883cd79e53628edb9abf91e514bffd1d74b3c2132e84d9981b done
+#12 exporting attestation manifest sha256:67dca90425941e00de67cbbfb9d06e6acc21b277c523aebe12b2e598bbfe49d0 done
+#12 exporting manifest list sha256:70254c8014fa04525a49370b1a62e0dfe3a545eda2b062b5f93c312f0300b38b done
+#12 naming to docker.io/library/cc-a1:latest done
+#12 unpacking to docker.io/library/cc-a1:latest done
+#12 DONE 0.1s

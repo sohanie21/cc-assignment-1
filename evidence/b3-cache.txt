@@ -1,0 +1,70 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.bad
+#1 transferring dockerfile: 164B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim
+#2 DONE 0.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 118B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM docker.io/library/python:3.12-slim@sha256:f77ac9e44ae96ef2c90b8053ea08c31f8be030f824196b0ae4db6d462c84e51f
+#4 resolve docker.io/library/python:3.12-slim@sha256:f77ac9e44ae96ef2c90b8053ea08c31f8be030f824196b0ae4db6d462c84e51f 0.0s done
+#4 DONE 0.0s
+
+#5 [2/5] WORKDIR /app
+#5 CACHED
+
+#6 [internal] load build context
+#6 transferring context: 63B done
+#6 DONE 0.0s
+
+#7 [3/5] COPY app.py .
+#7 DONE 0.0s
+
+#8 [4/5] COPY requirements.txt .
+#8 DONE 0.0s
+
+#9 [5/5] RUN pip install --no-cache-dir -r requirements.txt
+#9 1.233 Collecting flask==3.1.0 (from -r requirements.txt (line 1))
+#9 1.349   Downloading flask-3.1.0-py3-none-any.whl.metadata (2.7 kB)
+#9 1.401 Collecting Werkzeug>=3.1 (from flask==3.1.0->-r requirements.txt (line 1))
+#9 1.490   Downloading werkzeug-3.1.9-py3-none-any.whl.metadata (4.1 kB)
+#9 1.525 Collecting Jinja2>=3.1.2 (from flask==3.1.0->-r requirements.txt (line 1))
+#9 1.548   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+#9 1.582 Collecting itsdangerous>=2.2 (from flask==3.1.0->-r requirements.txt (line 1))
+#9 1.696   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+#9 1.736 Collecting click>=8.1.3 (from flask==3.1.0->-r requirements.txt (line 1))
+#9 1.757   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+#9 1.790 Collecting blinker>=1.9 (from flask==3.1.0->-r requirements.txt (line 1))
+#9 1.810   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+#9 1.903 Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->flask==3.1.0->-r requirements.txt (line 1))
+#9 2.003   Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (2.7 kB)
+#9 2.032 Downloading flask-3.1.0-py3-none-any.whl (102 kB)
+#9 2.078 Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+#9 2.099 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+#9 2.255 Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+#9 2.278 Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+#9 2.315 Downloading werkzeug-3.1.9-py3-none-any.whl (228 kB)
+#9 2.369 Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (24 kB)
+#9 2.397 Installing collected packages: MarkupSafe, itsdangerous, click, blinker, Werkzeug, Jinja2, flask
+#9 2.687 Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.3 Werkzeug-3.1.9 blinker-1.9.0 click-8.5.0 flask-3.1.0 itsdangerous-2.2.0
+#9 2.687 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#9 2.816 
+#9 2.816 [notice] A new release of pip is available: 25.0.1 -> 26.2.1
+#9 2.816 [notice] To update, run: pip install --upgrade pip
+#9 DONE 2.9s
+
+#10 exporting to image
+#10 exporting layers
+#10 exporting layers 0.4s done
+#10 exporting manifest sha256:e5e800c5aca33ebb24274f3c6320923252663f386116baa35704a288a3b536a1 done
+#10 exporting config sha256:f876d046ff2224e5d842ec4661078ff0ca01040abcb58492ea70bfb1b66631b9 done
+#10 exporting attestation manifest sha256:132a9bd007a63959140e653d56c384814d8be7612e1a3dacb5e63a54bcf9b141 done
+#10 exporting manifest list sha256:f2e66fa2b9e58f29daba4569ec763c3c0df7394c891a5db3fc3f37d8b0fd8a80 done
+#10 naming to docker.io/library/cc-a1:badcache done
+#10 unpacking to docker.io/library/cc-a1:badcache 0.1s done
+#10 DONE 0.5s

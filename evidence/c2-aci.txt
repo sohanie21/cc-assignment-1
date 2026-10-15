@@ -1,0 +1,15 @@
+{
+  "fqdn": "cc-a1-sohan-20261015.germanywestcentral.azurecontainer.io",
+  "image": "ccassignment1sohan2026c.azurecr.io/cc-a1:1.1",
+  "ip": "48.201.1.87",
+  "location": "germanywestcentral",
+  "name": "cc-a1-aci",
+  "ports": [
+    {
+      "port": 8000,
+      "protocol": "TCP"
+    }
+  ],
+  "provisioningState": "Succeeded",
+  "state": "Running"
+}
